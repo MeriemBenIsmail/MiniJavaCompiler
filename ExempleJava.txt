@@ -1,0 +1,49 @@
+/* ===========================================================
+  CECI EST UN COMMENTAIRE qui prendra fin a la prochaine
+  accolade fermante
+
+  TP1 - ift2030 - automne 2002
+  ============================================================ */
+
+class Calculator {
+
+  public static void main(String[] a) {
+    System.out.println(new Calculator1().calculate());
+  }
+}
+
+/* ====================================================
+   Classe Calculator1
+   ==================================================== */
+
+class Calculator1 {
+
+  bool test; 
+  int somme; 
+
+  public int calculate() {
+    
+    int x;
+    int y; 
+    x = 5;
+    y = 6;
+    somme = x * 10;
+    y = somme + 15;
+    somme = x / y;
+
+    if (x < 1) y = 1; else {
+      x = x + 1;
+      while (x > somme) y = y + 1;
+    }
+
+    return x;
+  }
+}
+
+
+
+
+
+
+
+
